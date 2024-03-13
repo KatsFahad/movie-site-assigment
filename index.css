@@ -1,7 +1,8 @@
+
 body{
     background: black;
-    /* font-family: "Anta", sans-serif; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    
 }
 
 .banner{
@@ -82,6 +83,8 @@ main h2{
 
 p{
     font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
 }
 .count-numbers{
     border: 1px solid white;
@@ -129,13 +132,17 @@ nav a:hover{
 }
 main img{
     width: 400px;
-    height: 410x;
+    height: 400x;
     border: 2px solid whitesmoke;
+    transition-delay: 1s;
     transition: 0.5s;
 }
 
 main img:hover{
-    transform: rotate(360deg);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    
 }
 /*
 .move-img{
@@ -172,7 +179,8 @@ main p{
     color: aliceblue;
 }
 .movie-title{
-    color: whitesmoke;
+    color: #5cfaff;
+    text-shadow: 0px 0px 10px #5cfaff;
 }
 
 .home-bar{
@@ -209,3 +217,190 @@ main p{
     border-radius: 10px;
     text-shadow: 0px 0px 100px cyan;
 }
+.banner img{
+    width: 100%;
+
+}
+
+
+@media screen and (max-width: 320px){
+    .home-bar{
+        flex-wrap: wrap;
+    }
+    .column ul{
+        flex-wrap: wrap;
+        margin-top: 5px;
+        
+    }
+    
+    #back-img h2{
+        font-size: 25px;
+    }
+    .imgs-banner img{
+        width: 8%;
+        height: 200px;
+        object-fit: cover;
+        filter: saturate(0%);
+        transition: all ease 0.5s;
+        cursor: pointer;
+    
+    }
+    .imgs-banner img:hover{
+        width: 50%;
+        filter: saturate(100%);
+    
+    }
+    #back-img a{
+        font-size: 25px;
+    }
+    .banner img{
+        height: 200px;
+    }
+    header p{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .home-bar input{
+        width: 90%;
+    }
+    .home-bar h1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .home-bar{
+        flex-wrap: wrap;
+    }
+    .rm-br br{
+        display: none;
+    }
+    .column ul{
+        flex-wrap: wrap;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .column a{
+        font-size: 15px;
+    }
+    
+    #back-img h2{
+        font-size: 25px;
+    }
+    .imgs-banner img{
+        width: 8%;
+        height: 200px;
+        object-fit: cover;
+        filter: saturate(0%);
+        transition: all ease 0.5s;
+        cursor: pointer;
+    
+    }
+    .imgs-banner img:hover{
+        width: 50%;
+        filter: saturate(100%);
+    
+    }
+    #back-img a{
+        font-size: 20px;
+    }
+    .banner img{
+        height: 200px;
+    }
+    header p{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .home-bar input{
+        width: 90%;
+    }
+    .home-bar h1{
+        width: 50%;
+        font-size: 20px;
+
+    }
+}
+/* @media screen and (max-width: 425px;) {
+    .home-bar{
+        flex-wrap: wrap;
+    }
+} */
+@media screen and (max-width: 480px){
+    .banner img{
+        height: 300px;
+    }
+    #back-img h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 780px){
+    .home-bar{
+        flex-wrap: wrap;
+    }
+    .home-bar input{
+        width: 50%;
+        margin: 5px auto;
+    }
+    .banner img{
+        height: 400px;
+    }
+   
+}
+@media screen and (max-width: 885px){
+    .home-bar{
+        flex-wrap: wrap;
+    }
+    .home-bar input{
+        width: 50%;
+        margin: 5px auto;
+    }
+    .banner img{
+        height: 400px;
+    }
+
+}
+@media screen and (max-width: 1105px){
+    .home-bar ul{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .home-bar{
+        flex-wrap: wrap;
+    }
+    .home-bar input{
+        width: 50%;
+        margin: 5px auto;
+    }
+    .banner img{
+        height: 500px;
+    }
+}
+
+/* media queries for ranked.html */
+@media screen and (max-width: 780px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .container img{
+        width: 100%;
+    }
+}
+ /* @media screen and (max-width: 655px){
+    .nav-h{
+        position: static;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    main img:hover{
+        pointer-events: none;
+        
+    }
+    
+} */
