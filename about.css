@@ -61,3 +61,13 @@ button:hover{
 p{
     font-family: "Pacifico", cursive;
 }
+
+@media screen and (max-width: 320px){
+    .container{
+        padding: 50px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}

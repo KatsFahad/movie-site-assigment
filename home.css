@@ -221,7 +221,67 @@ main p{
     width: 100%;
 
 }
+.text{
+    text-align: center;
+}
+.text p{
+    font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    color: aliceblue;
+}
+.login{
+    border: 1px solid whitesmoke;
+    background-image: url(images/octo.gif);
+    background-size: cover;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: yellow;
+    border-radius: 15px;
+    padding: 20px;
+}
+.login h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.login input{
+    margin-bottom: 20px;
+    line-height: 30px;
+    width: 60%;
+    border-radius: 10px;
+}
+.login button{
+    width: 50%;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: #333333;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.login a{
+    text-decoration: none;
+}
 
+.login p{
+    color: crimson;
+}
+.a-tag a{
+    padding: 10px;
+    background-color: black;
+    color: #5cfaff;
+}
+label{
+    color: yellow;
+    font-size: 20px;
+}
+.login span{
+    color: yellow;
+}
+
+/* media quries for home page */
 
 @media screen and (max-width: 320px){
     .home-bar{
@@ -267,6 +327,11 @@ main p{
     }
     .home-bar h1{
         width: 100%;
+    }
+    main img:hover{
+        width: 200px;
+        height: 200px;
+        
     }
 }
 
@@ -323,6 +388,11 @@ main p{
         font-size: 20px;
 
     }
+    main img:hover{
+        width: 300px;
+        height: 300px;
+        
+    }
 }
 /* @media screen and (max-width: 425px;) {
     .home-bar{
@@ -361,11 +431,27 @@ main p{
     .banner img{
         height: 400px;
     }
+    main img:hover{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .nah-h h2{
+        position: sticky;
+    }
 
 }
 @media screen and (max-width: 1105px){
     .home-bar ul{
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    main img:hover{
+        width: 150px;
+        height: 150px;
+        
     }
 }
 
@@ -379,6 +465,11 @@ main p{
     }
     .banner img{
         height: 500px;
+    }
+}
+@media screen and (max-width: 320px){
+    .login button{
+        width: 60%;
     }
 }
 
